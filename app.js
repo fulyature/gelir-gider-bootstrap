@@ -1,0 +1,7 @@
+//?SELECTORS
+
+//?VARİABLES
+
+//?EVENTS
+
+//?FUNCTİONS
