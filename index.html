@@ -38,9 +38,9 @@
         </button>
       </form>
 
-      <form id="harcama-formu" class="row g-3">
+      <form id="harcama-formu" class="row g-3 mt-4 border rounded-2 m-0">
         <h4 class="text-center">Harcama Formu</h4>
-        <div class="col-6">
+        <div class="col-4">
           <label for="harcama-alani" class="form-label">Harcama Alanı</label>
           <input
             type="text"
@@ -50,11 +50,11 @@
             required
           />
         </div>
-        <div class="col-6">
+        <div class="col-4">
           <label for="tarih" class="form-label">Tarih</label>
           <input type="date" class="form-control" id="tarih" required />
         </div>
-        <div class="col-12">
+        <div class="col-4">
           <label for="miktar" class="form-label">Harcanan Miktar</label>
           <input
             type="number"
@@ -64,7 +64,30 @@
             required
           />
         </div>
+        <div class="col-12 text-center p-3">
+          <button id="kaydet" type="submit" class="btn btn-warning">
+            Kaydet
+          </button>
+        </div>
       </form>
+      <table class="table table-bordered table-striped mt-4">
+        <thead>
+          <tr>
+            <th scope="col">Tarih</th>
+            <th scope="col">Harcama Alanı</th>
+            <th scope="col">Miktar</th>
+            <th scope="col">İşlem</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
   </body>
   <script src="app.js"></script>
