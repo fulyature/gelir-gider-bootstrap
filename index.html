@@ -70,24 +70,49 @@
           </button>
         </div>
       </form>
-      <table class="table table-bordered table-striped mt-4">
+      <table
+        id="harcama-tablosu"
+        class="table table-bordered table-striped mt-4 text-center"
+      >
         <thead>
           <tr>
             <th scope="col">Tarih</th>
-            <th scope="col">Harcama Alanı</th>
+            <th scope="col" class="w-40">Harcama Alanı</th>
             <th scope="col">Miktar</th>
             <th scope="col">İşlem</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
+        <tbody id="harcama-body">
+          <!-- <tr>
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
+          </tr> -->
+        </tbody>
+      </table>
+      <table
+        id="sonuc-tablosu"
+        class="table table-bordered table-striped mt-4 text-center w-25 ms-auto"
+      >
+        <tbody class="text-end">
+          <tr>
+            <th id="geliriniz">Geliriniz</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th id="gideriniz">Gideriniz</th>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th id="kalan">Kalan</th>
+            <td>0</td>
           </tr>
         </tbody>
       </table>
+      <section class="text-center">
+        <button class="btn btn-warning">Bilgileri Temizle</button>
+      </section>
     </main>
   </body>
   <script src="app.js"></script>
