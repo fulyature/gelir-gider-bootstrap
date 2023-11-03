@@ -6,15 +6,23 @@ const ekleFormu = document.getElementById("ekle-formu");
 
 //?VARİABLES
 
-let gelirler = "";
+let gelirler = 0;
 
 //?EVENTS
 
 // formun submıt btn a basıldıgında otomatı kolarak bu event e gelır
 ekleFormu.addEventListener("submit", (e) => {
-  e.preventDefault();
-  gelirler += gelirInput.value;
-  console.log(gelirler);
+  e.preventDefault(); //? reload'u engeller
+  gelirler = gelirler + Number(gelirInput.value); //? string eklemiyi engelledik
+
+  //? gelirlerin kalıcı olmasi icin localStorage a kopyaliyoruz
+  localStorage.setItem("gelirler", gelirler);
+
+  //? input degerini sifrladik
+  ekleFormu.reset();
+
+  //? Degisiklikleri sonuc tablosuna yazan fonks.
+  hesaplaVeGuncelle();
 });
 
 //?FUNCTİONS
