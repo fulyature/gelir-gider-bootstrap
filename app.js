@@ -2,7 +2,7 @@
 
 const gelirInput = document.getElementById("gelir-input");
 const ekleBtn = document.getElementById("ekle-btn");
-const ekleFormu = document.getElementById("ekle-formu");
+const ekleFormu = document.getElementById("ekle-form");
 
 //?VARİABLES
 
@@ -14,7 +14,7 @@ let gelirler = 0;
 ekleFormu.addEventListener("submit", (e) => {
   e.preventDefault(); //? reload'u engeller
   gelirler = gelirler + Number(gelirInput.value); //? string eklemiyi engelledik
-
+  console.log(gelirler);
   //? gelirlerin kalıcı olmasi icin localStorage a kopyaliyoruz
   localStorage.setItem("gelirler", gelirler);
 
@@ -22,7 +22,7 @@ ekleFormu.addEventListener("submit", (e) => {
   ekleFormu.reset();
 
   //? Degisiklikleri sonuc tablosuna yazan fonks.
-  hesaplaVeGuncelle();
+  //   hesaplaVeGuncelle();
 });
 
 //?FUNCTİONS
